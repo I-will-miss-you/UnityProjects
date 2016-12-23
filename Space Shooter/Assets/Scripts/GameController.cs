@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class GameController : MonoBehaviour {
+public class GameController : MonoBehaviour
+{
 
 	public GameObject hazard;
 	public Vector3 spawnValue;
@@ -10,40 +12,78 @@ public class GameController : MonoBehaviour {
 	public float spawnWait;
 	public float startWait;
 	public float waveWait;
-	public int dificuldade; 
+	public int dificuldade;
 
 	public GUIText scoreText;
+	public GUIText restartText;
+	public GUIText gameOverText;
+
+	private bool gameOver;
+	private bool restart;
 	private int score;
 
-	void Start(){
+	void Start()
+	{
+		gameOver = false;
+		restart = false;
+		restartText.text = "";
+		gameOverText.text = "";
 		score = 0;
-		UpdateScore ();
-		StartCoroutine(SpawnWaves ());
+		UpdateScore();
+		StartCoroutine(SpawnWaves());
 	}
 
-	IEnumerator SpawnWaves(){
-		yield return new WaitForSeconds (startWait);
-		while(true)
+
+	void Update()
+	{
+		if (restart)
 		{
-			for (int i = 0; i < hazardCount ; i++) {
-				Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValue.x, spawnValue.x), spawnValue.y, spawnValue.z);
-				Quaternion spawnRotation = Quaternion.identity;
-				Instantiate (hazard, spawnPosition, spawnRotation);
-				yield return new WaitForSeconds (spawnWait);
+			if (Input.GetKeyDown(KeyCode.R))
+			{
+				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 			}
-			hazardCount *= dificuldade;
-			yield return new WaitForSeconds (waveWait);
 		}
 	}
 
-	public void AddScore(int newScoreValue){
-		score += newScoreValue;
-		UpdateScore ();
+
+	IEnumerator SpawnWaves()
+	{
+		yield return new WaitForSeconds(startWait);
+		while (true)
+		{
+			for (int i = 0; i < hazardCount; i++)
+			{
+				Vector3 spawnPosition = new Vector3(Random.Range(-spawnValue.x, spawnValue.x), spawnValue.y, spawnValue.z);
+				Quaternion spawnRotation = Quaternion.identity;
+				Instantiate(hazard, spawnPosition, spawnRotation);
+				yield return new WaitForSeconds(spawnWait);
+			}
+			hazardCount *= dificuldade;
+			yield return new WaitForSeconds(waveWait);
+		
+			if (gameOver)
+			{
+				restartText.text = "Press 'R' for Restart";
+				restart = true;
+				break;
+			}
+		}
 	}
 
-	void UpdateScore(){
+	public void AddScore(int newScoreValue)
+	{
+		score += newScoreValue;
+		UpdateScore();
+	}
+
+	void UpdateScore()
+	{
 		scoreText.text = "Score: " + score;
 	}
 
-
+	public void GameOver()
+	{
+		gameOverText.text = "Game Over!"; 
+		gameOver = true;
+	}
 }
