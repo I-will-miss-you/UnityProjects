@@ -5,22 +5,38 @@ Direct3D:
     Renderer: NVIDIA GeForce GT 740M (ID=0x1292)
     Vendor:   NVIDIA
     VRAM:     2020 MB
-    Driver:   21.21.13.7609
+    Driver:   21.21.13.7849
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\fonse\Documents\UnityProjects\AcePanic\Panic Run_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\fonse\Documents\UnityProjects\AcePanic\Panic Run_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\fonse\Documents\UnityProjects\AcePanic\Panic Run_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\fonse\Documents\UnityProjects\AcePanic\Panic Run_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\fonse\Documents\UnityProjects\AcePanic\Panic Run_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\fonse\Documents\UnityProjects\AcePanic\Panic Run_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\fonse\Documents\UnityProjects\AcePanic\Panic Run_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\fonse\Documents\UnityProjects\AcePanic\Panic Run_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\fonse\Documents\UnityProjects\AcePanic\Panic Run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading C:\Users\fonse\Documents\UnityProjects\AcePanic\Panic Run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.145 seconds
-Platform assembly: C:\Users\fonse\Documents\UnityProjects\AcePanic\Panic Run_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\fonse\Documents\UnityProjects\AcePanic\Panic Run_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 59Hz; virtual: 3840x1848 at -1920,-1080
+Platform assembly: C:\Users\fonse\Documents\GitHub\UnityProjects\AcePanic\Panic Run_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\fonse\Documents\GitHub\UnityProjects\AcePanic\Panic Run_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\fonse\Documents\GitHub\UnityProjects\AcePanic\Panic Run_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\fonse\Documents\GitHub\UnityProjects\AcePanic\Panic Run_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\fonse\Documents\GitHub\UnityProjects\AcePanic\Panic Run_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\fonse\Documents\GitHub\UnityProjects\AcePanic\Panic Run_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\fonse\Documents\GitHub\UnityProjects\AcePanic\Panic Run_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\fonse\Documents\GitHub\UnityProjects\AcePanic\Panic Run_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\fonse\Documents\GitHub\UnityProjects\AcePanic\Panic Run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\fonse\Documents\GitHub\UnityProjects\AcePanic\Panic Run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.191 seconds
+Platform assembly: C:\Users\fonse\Documents\GitHub\UnityProjects\AcePanic\Panic Run_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\fonse\Documents\GitHub\UnityProjects\AcePanic\Panic Run_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 59Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
-XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 4.255579 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.906029 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 365.
+Total: 0.407981 ms (FindLiveObjects: 0.064575 ms CreateObjectMapping: 0.055167 ms MarkObjects: 0.272415 ms  DeleteObjects: 0.013684 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.311039 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 323.
+Total: 0.572200 ms (FindLiveObjects: 0.067569 ms CreateObjectMapping: 0.037205 ms MarkObjects: 0.385315 ms  DeleteObjects: 0.079971 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 352c -> priority: 1 
+  Thread -> id: 1478 -> priority: 1 
